@@ -77,3 +77,9 @@ body{
     background-color: #84c922;
 }
 
+@media screen and (max-width: 480px) {
+    .nav-li{
+        width: 50%;
+    }
+    
+}

@@ -129,7 +129,11 @@
     transform: scale(1.5);
 }
 
-
+@media screen and (max-width: 1024px) {
+    .article{
+        width: 80%;
+    }
+}
 
 
 
