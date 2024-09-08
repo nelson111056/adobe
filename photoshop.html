@@ -15,6 +15,11 @@
     <meta property="og:locale" content="zh_TW">
 
     <title>官方版 Adobe Photoshop - 頂尖的 AI 相片和設計軟體</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./js/master.js"></script>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/all.css">
     <link rel="stylesheet" href="./style/master.css">
@@ -22,14 +27,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
 
 
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="nav" id="Nav">
         <a class="nav-btn nav-btn-index" href="./index.html">index</a>
         <a class="nav-btn " href="./acrobat.html">acrobat</a>
         <a class="nav-btn " href="./premiere.html">premiere</a>
@@ -55,8 +63,13 @@
 
         <div class="article-body">
 
-            <div class="grid grid-3">
-                <a href="https://blog.adobe.com/en/topics/photoshop" target="_blank">
+            <div class="grid" id="Grid">
+                <a href="https://blog.adobe.com/en/topics/photoshop" target="_blank"
+                data-fancybox="ph" data-caption="Adobe Blog"
+                data-type="iframe"
+                data-width="800"
+                data-height="600"
+                >
                     <div class="card hover-fade-in hover-zoom-in">
                         <div class="card-hard">
                     <img class="card-img" src="./images/ps-1-sm.png" width="250" height="141" alt="Adobe Blog">
@@ -67,7 +80,12 @@
                     </div>
                 </a>
            
-                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6686148174604!2d121.51190481076229!3d25.045317777716456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9bf67b1f137%3A0xaac565ba73e59de4!2z6LWr57a16Kit6KiI5a246Zmi77yN6aSo5YmN5a246Zmi772c6Zu76IWm5oqA6IO977yG6Kit6KiI6Kqy56iLKOW5s-mdouioreioiC_lrqTlhafoqK3oqIgv55-t5b2x6Z-zL-aUneW9sSk!5e0!3m2!1szh-TW!2stw!4v1724573555460!5m2!1szh-TW!2stw" target="_blank">
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6686148174604!2d121.51190481076229!3d25.045317777716456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9bf67b1f137%3A0xaac565ba73e59de4!2z6LWr57a16Kit6KiI5a246Zmi77yN6aSo5YmN5a246Zmi772c6Zu76IWm5oqA6IO977yG6Kit6KiI6Kqy56iLKOW5s-mdouioreioiC_lrqTlhafoqK3oqIgv55-t5b2x6Z-zL-aUneW9sSk!5e0!3m2!1szh-TW!2stw!4v1724573555460!5m2!1szh-TW!2stw" target="_blank"
+                data-fancybox="ph" data-caption="學習地點 - 站前學院"
+                data-type="iframe"
+                data-width="800"
+                data-height="600"
+                >
                     <div class="card hover-fade-in hover-zoom-in ">
                         <div class="card-hard">
                     <img class="card-img" src="./images/ps-2-sm.png" width="250" height="141" alt="學習地點 - 站前學院">
@@ -78,7 +96,12 @@
                     </div>
                 </a>
 
-                <a href="https://www.ortwin-oberhauser.com/pdfs/google_seo-starter-guide.pdf" target="_blank">
+                <a href="https://www.ortwin-oberhauser.com/pdfs/google_seo-starter-guide.pdf" target="_blank"
+                data-fancybox="ph" data-caption="SEO 文件"
+                data-type="iframe"
+                data-width="800"
+                data-height="600"
+                >
                     <div class="card hover-fade-in hover-zoom-in ">
                         <div class="card-hard">
                     <img class="card-img" src="./images/ps-3-sm.png" width="250" height="141" alt="SEO 文件">

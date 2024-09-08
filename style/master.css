@@ -135,5 +135,37 @@
     }
 }
 
+@media screen and (max-width : 480px ) {
 
+    .nav{
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        display: flex;
+        /* background-color: cadetblue; */
+        width: 100%;
+        justify-content: center;
+        z-index: 1;
+
+    }
+
+        .nav-active{
+            background-color: rgba(95, 158, 160,.5)
+        }
+
+
+        .article{
+            width: auto;
+            padding: 4rem 2rem 2rem;
+           
+        }
+
+        .article-head{
+            text-align: center;
+        }
+
+
+
+    
+}
 
